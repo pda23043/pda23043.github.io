@@ -9,8 +9,8 @@
       var sound= this.el.components.sound;
       if(sound) sound.playSound();
     }
-    <script>
-      AFRAME. registerComponent('flying' , {
+  });
+            AFRAME. registerComponent('flying' , {
         tick: function () {
           if (Math.random() <0.5) return;
           var x=Math.random()* 100-50;
@@ -19,8 +19,6 @@
           this.el.setAttribute('animation','property: position; to: '+x+''+y+' '+z);
   });
   </script>
-   </script>
-</script>
 </head>
 <body>
   <a-scene id="s1" background="color:#0d0928" fog="far:300" shadow="type:pcfsoft">
@@ -64,7 +62,7 @@
         scene1.appendChild(tree);
       } 
       for(var i = 0; i < 10; i++) {
-        var bee = document.createElement(' a-entity');
+        var bee = document.createElement('a-entity');
         var x = Math.random() * 10-5;
         var y = Math.random() * 3+3; 
         var z = Math.random() * 10-5;
