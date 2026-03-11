@@ -55,8 +55,17 @@
         var z = Math.random() * 10-5;
         var r = math.random() * 180- 90;
         bee.setAttribute('gltf-model' , '#bee' );
-         bee.setAttribute('position' , x +  ' ' + y + ' ' + z);
-         bee.setAttribute(scale' , '
+        bee.setAttribute('position', x +  ' ' + y + ' ' + z);
+        bee.setAttribute('scale', '0.01 0.01 0.01');
+        bee.setAttribute ('rotation', '0 ' + r + ' 0');
+        bee.setAttribute ( 'sound', 'src:#bzzz; volume: 0.1; poolSize: 10');
+        bee.setAttribute ('sounding',''); 
+        scene1.appendChild(bee);
+      }
+        
+        
+        
+        
       
         
       </script>    
